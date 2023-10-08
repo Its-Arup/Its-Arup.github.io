@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,400&family=Poppins:wght@400;500;600&display=swap');
+ 
+/* All font family which is use in this project  */
+
+/* 
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/* utility classes :  */
+
+:root{
+    --primary-font-family: 'Poppins', sans-serif;
+    --secondery-font-family : 'Nunito Sans', sans-serif;
+    --dark-bg-color : #292525;
+    --light-bg-color : azure;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ham{
+    width: 100%;
+    background-color: var(--dark-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    color: var(--light-bg-color);
+    font-family: var(--primary-font-family);
+}
+.logo{
+    margin: 0 20px;
+}
+nav{
+    margin: 0 20px ;
+}
+.nav-menu{
+    display: flex;
+    gap: 60px;
+}
+.nav-links{
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: var(--light-bg-color);
+}
+.menu{
+    display: none;
+    margin: 0 20px;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--light-bg-color);
+    margin: 5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;;
+}
+
+
+
+/* ---- Media Quary ---- */
+
+@media (max-width:780px) {
+    .menu{
+        display: block;
+    }
+    .menu.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        gap: 40px;
+        flex-direction: column;
+        background-color: var(--dark-bg-color);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-links:last-child{
+        padding-bottom: 40px;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+}
