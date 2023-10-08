@@ -1,0 +1,221 @@
+/* ---- Media Quary ---- */
+
+@media (max-width: 1080px) {
+    .menu {
+      display: block;
+    }
+    .menu.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menu.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .menu.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 80px;
+      gap: 40px;
+      flex-direction: column;
+      background-color: var(--dark-bg-color);
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+      z-index: 999;
+    }
+    .nav-links:last-child {
+      padding-bottom: 40px;
+    }
+    .nav-menu.active {
+      left: 0;
+    }
+  
+    /* home Section */
+  
+    #home {
+      margin-top: 70px;
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      z-index: 10;
+    }
+  
+    #home > div {
+      padding-top: 45px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  
+    .details-div {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+  
+    .details-div > div:first-child {
+      margin-left: 30px;
+      text-align: center;
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .details-div h1 {
+      font-size: 50px;
+    }
+  
+    .details-div h2 {
+      font-size: 30px;
+    }
+  
+    .details-div h3 {
+      font-size: 25px;
+      position: relative;
+      z-index: 2;
+    }
+  
+    .details-div h3::before {
+      top: 0;
+      left: 0;
+      position: absolute;
+      content: "";
+      background-color: var(--dark-bg-color);
+      border-left: 2px solid var(--accent-color);
+      width: 100%;
+      height: 100%;
+      animation: animate 4s steps(16) infinite;
+      transition: all 0.35s;
+      z-index: 0;
+    }
+  
+    @keyframes animate {
+      40%,
+      60% {
+        left: 100%;
+      }
+  
+      100% {
+        left: 0%;
+      }
+    }
+    .btn-pack {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .btn-pack > div {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .btn-pack > div > i {
+      font-size: 35px;
+      margin-left: 15px;
+      cursor: pointer;
+    }
+    .btn-pack > div > i:hover {
+      color: #f0422f;
+    }
+    .resume-btn {
+      display: block;
+      width: 100px;
+      margin-right: 10px;
+      padding: 8px 12px;
+      font-size: 18px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      border: 2px solid #333;
+      letter-spacing: 2px;
+      text-align: center;
+      position: relative;
+      transition: all 0.35s;
+    }
+  
+    .resume-btn span {
+      position: relative;
+      z-index: 2;
+    }
+  
+    .resume-btn:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: #c21500;
+      background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+      background: linear-gradient(to right, #ffc500, #c21500);
+      transition: all 0.35s;
+    }
+  
+    .resume-btn:hover:after {
+      width: 100%;
+    }
+  
+    .image-icon {
+      display: none;
+      width: 20%;
+      margin: 0 auto;
+      transition: none;
+      position: unset;
+    }
+    .image-icon > div {
+      position: unset;
+      margin: 25px auto;
+      width: 80%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .image-icon .background {
+      background: #f0422f;
+      background: -webkit-linear-gradient(to right, #f5af19, #f12711);
+      background: linear-gradient(to right, #f5af19, #f12711);
+      width: 50%;
+      height: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 3;
+      border-radius: 57% 43% 38% 62% / 64% 41% 59% 36%;
+    }
+  
+    .image-icon img {
+      width: 70%;
+      z-index: 5;
+    }
+  
+    @keyframes animated {
+      0% {
+        top: 0%;
+      }
+  
+      25% {
+        top: 2.5%;
+      }
+  
+      50% {
+        top: 5%;
+      }
+      75% {
+        top: 2.5%;
+      }
+  
+      100% {
+        top: 0%;
+      }
+    }
+  }
+  
