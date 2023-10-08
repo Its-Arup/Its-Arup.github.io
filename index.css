@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif;
 :root {
   --primary-font-family: "Poppins", sans-serif;
   --secondery-font-family: "Nunito Sans", sans-serif;
-  --dark-bg-color: #292525;
+  --dark-bg-color: #091428;
   --light-bg-color: azure;
   --accent-color: #04f4f2;
 }
@@ -154,18 +154,18 @@ nav {
   cursor: pointer;
 }
 .btn-pack > div > i:hover {
-  color: #f0422f;
+  color: var(--accent-color);
 }
 .resume-btn {
   display: block;
-  width: 100px;
+  width: 150px;
   margin-right: 10px;
   padding: 8px 12px;
   font-size: 18px;
   text-decoration: none;
-  color: #333;
+  color: var(--light-bg-color);
   font-weight: bold;
-  border: 2px solid #333;
+  border: 2px solid var(--light-bg-color);
   letter-spacing: 2px;
   text-align: center;
   position: relative;
@@ -184,9 +184,9 @@ nav {
   left: 0;
   width: 0;
   height: 100%;
-  background: #c21500;
-  background: -webkit-linear-gradient(to right, #ffc500, #c21500);
-  background: linear-gradient(to right, #ffc500, #c21500);
+  /* background: var(); */
+  background: -webkit-linear-gradient(to right, #246d86, var(--accent-color));
+  background: linear-gradient(to right, #246d86, var(--accent-color));
   transition: all 0.35s;
 }
 
@@ -197,7 +197,9 @@ nav {
 .resume-btn:hover:after {
   width: 100%;
 }
-
+.social-icon{
+    color: var(--light-bg-color);
+}
 .image-icon {
   width: 45%;
   display: flex;
