@@ -65,6 +65,210 @@ nav{
 
 
 
+/* ----- Home section ------ */
+
+
+#home{
+    margin-top:70px;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    z-index: 10;
+}
+
+#home > div{
+
+    display:flex;
+    justify-content: space-evenly;
+    height:100%;
+
+}
+
+.details-div{
+
+    width:55%;
+    display:flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.details-div>div:first-child{
+    
+    margin-left: 120px;
+    display: flex;
+    width:100%;
+    align-items: center;
+    height:100%;
+    justify-content: flex-start;
+
+}
+
+.details-div  h1{
+   font-size: 50px;
+   color:#f12711;
+}
+
+.details-div h2{
+    font-size: 40px;
+}
+
+.details-div h3{
+
+  font-size: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.details-div h3::before{
+    top:0;
+    left:0;
+    position: absolute;
+    content: "";
+    background-color: #F9F8F7;
+    border-left: 2px solid #f0422f;
+    width:100%;
+    height:100%;
+    animation: animate 4s steps(16) infinite;
+    transition: all .35s;
+    z-index: 0;
+}
+
+@keyframes animate{
+
+    40% ,60%{
+        left:90%;
+    }
+
+    100%{
+        left:0%;
+
+    }
+}
+.btn-pack{
+    display: flex;
+    margin-top: 20px ;
+}
+.btn-pack>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.btn-pack>div>i{
+    font-size: 35px;
+    margin-left:15px;
+    cursor: pointer;
+    
+}
+.btn-pack>div>i:hover{
+    color:#f0422f
+}
+.resume-btn{
+    display: block;
+    width:100px;
+    margin-right: 10px ;
+    padding:8px 12px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+.resume-btn span{
+    position: relative;
+    z-index: 2;
+  }
+  
+.resume-btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #c21500;
+    background: -webkit-linear-gradient(to right, #ffc500, #c21500); 
+    background: linear-gradient(to right, #ffc500, #c21500);  
+    transition: all .35s;
+  }
+  
+.resume-btn:hover{
+    color: #fff;
+  }
+  
+.resume-btn:hover:after{
+    width: 100%;
+  }
+
+.image-icon{
+    width:45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 5s ease;
+    position: relative;
+}
+.image-icon>div{
+    position: absolute;
+    right:0; 
+    top:0;
+    margin-top: 25px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: animated 2.5s linear infinite;
+}
+
+.image-icon .background{
+    background: #f0422f;  
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711); 
+    background: linear-gradient(to right, #f5af19, #f12711); 
+    width:70%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    border-radius: 57% 43% 38% 62% / 64% 41% 59% 36% ;
+    
+}
+
+.image-icon img{
+    width:70%;
+    z-index:5;
+}
+
+@keyframes animated {
+    
+     0%{
+        top:0%;
+     }
+
+     25%{
+        top:2.5%;
+     }
+     
+     50%{
+        top:5%;
+     }
+     75%{
+        top:2.5%;
+     }
+
+     100%{
+        top:0%;
+     }
+}
+
+
+
+
 /* ---- Media Quary ---- */
 
 @media (max-width:780px) {
