@@ -383,13 +383,13 @@ nav {
 
 #skills{
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;  /* fix this extra margin in media quary*/
   font-family: var(--primary-font-family);
 }
 #skills>h1{
   font-size: 30px;
   letter-spacing: 1.5px;
-  color: var(--light-bg-color);
+  color: var(--accent-color);
 }
 
 .skills-main>div{
@@ -398,7 +398,7 @@ nav {
   width:80%;
   /* background-color: #FFF1EF; */
   border-radius: 40px;
-  margin:60px auto;
+  margin:40px auto;
 }
 .skills-main>div>div{
   width:40%;
