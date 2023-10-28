@@ -443,7 +443,7 @@ nav {
   align-items: center;
 }
 .main-tech-stack > div>div>div>img , .main-tools >div> div >div>img{
-  width:30%;
+  width:50%;
   padding:10px
 }
 .main-tech-stack > div>div>div>p , .main-tools >div> div >div>p{
