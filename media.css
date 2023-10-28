@@ -318,6 +318,156 @@
   margin: 5px 10px ;
 }
 
+/*-------------- SKILLS SECTION -----------------*/
+ 
+#skills{
+  text-align: center;
+  margin-top: 30px;
+
 }
+#skills>h1{
+  font-size: 30px;
+}
+
+.skills-main>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width:80%;
+  margin:30px auto;
+}
+.skills-main>div>div{
+  width:70%;
+  padding: 30px 20px;
+  border-radius: 30px;
+  margin:10px auto;
+}
+
+.main-tech-stack > div ,.main-tools >div {
+  width:100%;
+  text-align: center;
+  margin:10px 25px;
+  grid-template-columns: repeat(3,120px);
+  grid-template-rows: auto;
+  gap:25px 25px;
+  padding:0;
+}
+.main-tech-stack , .main-tools  {
+  text-align: center;
+ 
+}
+.main-tech-stack >h1 , .main-tools>h1{
+  color: var(--light-bg-color);
+  margin:5px auto 30px;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+
+.main-tech-stack > div>div:first-child , .main-tools > div >div{
+  text-align: center;
+}
+.main-tech-stack > div>div>div , .main-tools > div >div>div{
+
+  width:110px;
+  height:110px; 
+  display:flex;
+  border-radius: 15px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.main-tech-stack > div>div>div>img , .main-tools >div> div >div>img{
+  width:45%;
+  padding:10px
+}
+.main-tech-stack > div>div>div>p , .main-tools >div> div >div>p{
+  color:var(--light-bg-color);
+  padding:5px;
+  font-weight: 600;
+}
+
+}
+
+
+@media all and (min-width:320px) and (max-width:600px){
+
+  *-------------- SKILLS SECTION -----------------*/
+
+#skills{
+    text-align: center;
+    margin-top: 100px;
+   
+}
+#skills>h1{
+    
+    font-size: 30px;
+
+}
+
+.skills-main>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width:80%;
+    margin:60px auto;
+}
+.skills-main>div>div{
+    width:90%;
+    margin-top: 10px;
+    padding: 30px 20px;
+    border-radius: 30px;
+}
+
+.main-tech-stack > div ,.main-tools >div {
+    display: grid;
+    width:100%;
+    text-align: center;
+    grid-template-columns: repeat(2,120px);
+    grid-template-rows: auto;
+    gap:20px 10px;
+    padding:10px 20px;
+}
+.main-tech-stack , .main-tools  {
+    text-align: center;
+   
+}
+.main-tech-stack >h1 , .main-tools>h1{
+    color: var(--light-bg-color);
+    margin:0px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.main-tech-stack > div>div:first-child , .main-tools > div >div{
+    text-align: center;
+}
+.main-tech-stack > div>div>div , .main-tools > div >div>div{
+
+    width:100px;
+    height:100px; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display:flex;
+    border-radius: 15px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.main-tech-stack > div>div>div>img , .main-tools >div> div >div>img{
+    width:30%;
+    padding:10px
+}
+.main-tech-stack > div>div>div>p , .main-tools >div> div >div>p{
+    color:var(--light-bg-color);
+    padding:5px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+}
+
+
+
 
 
