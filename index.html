@@ -13,40 +13,48 @@
     <title>Arup Paul Portfolio</title>
   </head>
   <body>
-    <div class="ham" id="nav-menu">
-      <div class="logo">
-        <h1>LOGO</h1>
-      </div>
-      <nav>
-        <ul class="nav-menu">
-          <li class="nav-links">
-            <a href="#home" class="nav-link home">Home</a>
-          </li>
-          <li class="nav-links">
-            <a href="#about" class="nav-link about">About</a>
-          </li>
-          <li class="nav-links">
-            <a href="#skills" class="nav-link skills">Skills</a>
-          </li>
-          <li class="nav-links">
-            <a href="#projects" class="nav-link projects">Projects</a>
-          </li>
-          <li class="nav-links">
-            <a href="#contact" class="nav-link contact">Contacts</a>
-          </li>
-          <li class="nav-links">
-            <a href="/Arup_Paul_Resume.pdf" download class="nav-link resume"
-              >Resume</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <div class="menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
+    <div class="container">
+      <section id="nav-menu">
+          <div id="nav-bar">
+              <a href="#home" class="nav-link home">
+                  <i class="fa-solid fa-house icon"></i>
+                  <p class=" nav-name">HOME </p>
+              </a>
+              <a href="#about" class="nav-link about">
+                  <i class="fa-solid fa-circle-info icon"></i>
+                  <p class=" nav-name">ABOUT</p>
+              </a>
+              <a href="#skills" class="nav-link skills">
+                  <i class="fa-solid fa-diagram-project icon"></i>
+                  <p class=" nav-name">SKILLS</p>
+              </a>
+              <a href="#projects" class="nav-link projects">
+                  <i class="fa-solid fa-file icon"></i>
+                  <p class=" nav-name">PROJECTS</p>
+              </a>
+              <a href="#contact" class="nav-link contact">
+                  <i class="fa-solid fa-phone icon"></i>
+                  <p class=" nav-name">CONTACTS</p>
+              </a>
+              <a id="resume-button-1"  onclick="resumeDownload()" target="_blank" href="/Arup_Paul_Resume.pdf" class="nav-link resume" download>
+                  <i class="fa-solid fa-file-arrow-down icon"></i>
+                  <p id="resume-link-1" class="nav-name" >RESUME</p>
+              </a>
+              <div id="side-window" >
+                  <a class="closebtn"> &times;</a>
+                  <a href="#home">HOME</a>
+                  <a href="#about">ABOUT</a>
+                  <a href="#skills">SKILLS</a>
+                  <a href="#projects">PROJECTS</a>
+                  <a href="#contact">CONTACTS</a>
+                  <a id="resume-link-1"   onclick="resumeDownload()" target="_blank" 
+                  href="/Arup_Paul_Resume.pdf"
+                  download>RESUME</a>
+                </div>
+              <button class="openbtn">&#9776; </button>
+          </div>
+
+      </section>
 
     <!-- home section -->
 
