@@ -95,7 +95,7 @@
 	font-size: 1.6rem;
 	margin-bottom: 2rem;
 }
-#projects .item .right .project-desc {
+#projects .item .right .project-description {
 	color: var(--secondary-gray);
 	margin-bottom: 1rem;
 }
