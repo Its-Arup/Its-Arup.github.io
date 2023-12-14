@@ -59,13 +59,13 @@ var TxtType = function (el, toRotate, period) {
 
   // resume ------------- function resumeTab1() 
 function resumeTab1() {
-  const pdfUrl = "https://drive.google.com/file/d/1aWEZQFHJuUNS6-V3dUESirw-pudkvBqn/view?usp=sharing";
+  const pdfUrl = "https://drive.google.com/file/d/1mvLFwax9heUmkZ_iTcGZ75kDvhVGxFDj/view?usp=sharing";
     window.open(pdfUrl, '_blank');
 }
 
 document.querySelector("#resume-link-2").addEventListener("click", () => {
   window.open(
-    "https://drive.google.com/file/d/1aWEZQFHJuUNS6-V3dUESirw-pudkvBqn/view?usp=sharing",
+    "https://drive.google.com/file/d/1mvLFwax9heUmkZ_iTcGZ75kDvhVGxFDj/view?usp=sharing",
     "_blank"
   );
 });
