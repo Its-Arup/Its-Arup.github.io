@@ -15,6 +15,7 @@ button{
 }
 body{
     background-color: #091b29;
+     scroll-behavior: smooth;
 }
 #nav-menu{
     display: flex;
